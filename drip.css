@@ -19,3 +19,9 @@ h1 {
     outline-offset: 10px;
 }
 
+#box:hover {
+    outline: white 3px solid;
+    outline-offset: 10px;
+    animation: drip 1s ease-in-out infinite;
+}
+
