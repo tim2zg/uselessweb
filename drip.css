@@ -24,7 +24,13 @@ h1 {
     outline-offset: 10px;
 }
 
-.box:hover h1:nth-child(1) {
+#box span {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#box:hover span:nth-child(1) {
     transform: translate(0%, 8%) rotate(-8deg);
 }
 
