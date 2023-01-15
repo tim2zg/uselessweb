@@ -20,8 +20,15 @@ h1 {
 }
 
 #box:hover {
-    outline: white 3px solid;
+    outline: red 3px solid;
     outline-offset: 10px;
-    animation: drip 1s ease-in-out infinite;
+}
+
+.box:hover h1:nth-child(1) {
+    transform: translate(0%, 8%) rotate(-8deg);
+}
+
+.line:hover span:nth-child(1) {
+    transform: translate(0%, 8%) rotate(-8deg);
 }
 
