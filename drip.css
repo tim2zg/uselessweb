@@ -8,7 +8,7 @@ body {
 
 h1 {
     color: white;
-    font-family: Harrington, sans-serif;
+    font-family: Dubai, sans-serif;
     font-size: clamp(2rem, 8vw, 50px);
     margin-left: 10px;
     margin-right: 10px;
@@ -19,8 +19,8 @@ h1 {
     outline-offset: 10px;
 }
 
-#box:hover {
-    outline: red 3px solid;
+#box:hover .letter {
+    opacity: 0.1%;
     outline-offset: 10px;
 }
 
@@ -33,11 +33,36 @@ h1 {
     margin-left: 10px;
 }
 
-#box:hover span:nth-child(1) {
-    transform: translate(0%, 8%) rotate(-8deg);
+#box:hover span:nth-child(4) {
+    transform: translate(0%, -120px);
 }
 
-.line:hover span:nth-child(1) {
-    transform: translate(0%, 8%) rotate(-8deg);
+#box:hover span:nth-child(7) {
+    transform: translate(0%, -120px);
 }
+
+#box:hover span:nth-child(10) {
+    transform: translate(0%, 120px);
+}
+
+#box:hover span:nth-child(15) {
+    transform: translate(-55px, 120px);
+}
+
+#box:hover span:nth-child(8) {
+    transform: translate(130px, 120px);
+}
+
+#box:hover span:nth-child(19) {
+    transform: translate(-35px, 130px) rotate3d(180, 0, 0, 180deg);
+}
+
+#box:hover span:nth-child(11) {
+    transform: translate(170px, 120px);
+}
+
+#box:hover span:nth-child(12) {
+    transform: translate(200px, 120px);
+}
+
 
