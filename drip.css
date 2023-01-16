@@ -34,35 +34,112 @@ h1 {
 }
 
 #box:hover span:nth-child(4) {
-    transform: translate(0%, -120px);
+    animation: rotateAway 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 0.5s;
 }
 
 #box:hover span:nth-child(7) {
-    transform: translate(0%, -120px);
+    animation: rotateAway 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 0.5s;
 }
 
 #box:hover span:nth-child(10) {
-    transform: translate(0%, 120px);
+    animation: rotateAway2 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes rotateAway2 {
+    from {
+        transform: translate(0%, 0%);
+    }
+    to {
+        transform: translate(0%, 120px);
+    }
 }
 
 #box:hover span:nth-child(15) {
-    transform: translate(-55px, 120px);
+animation: rotateAway3 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes rotateAway3 {
+    from {
+        transform: translate(0%, 0%);
+    }
+    to {
+        transform: translate(-55px, 120px);
+    }
 }
 
 #box:hover span:nth-child(8) {
-    transform: translate(130px, 120px);
+    animation: rotateAway4 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes rotateAway4 {
+    from {
+        transform: translate(0%, 0%);
+    }
+    to {
+        transform: translate(130px, 120px);
+    }
 }
 
 #box:hover span:nth-child(19) {
-    transform: translate(-35px, 130px) rotate3d(180, 0, 0, 180deg);
+    animation: rotateAway5 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes rotateAway5 {
+    from {
+        transform: translate(0%, 0%) rotate3d(0, 0, 0, 0deg);
+    }
+    to {
+        transform: translate(-35px, 130px) rotate3d(180, 0, 0, 180deg);
+    }
 }
 
 #box:hover span:nth-child(11) {
-    transform: translate(170px, 120px);
+    animation: rotateAway6 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes rotateAway6 {
+    from {
+        transform: translate(0%, 0%) rotate3d(0, 0, 0, 0deg);
+    }
+    to {
+        transform: translate(170px, 120px);
+    }
 }
 
 #box:hover span:nth-child(12) {
-    transform: translate(200px, 120px);
+    animation: rotateAway7 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 0.5s;
 }
 
+@keyframes rotateAway7 {
+    from {
+        transform: translate(0%, 0%) rotate3d(0, 0, 0, 0deg);
+    }
+    to {
+        transform: translate(200px, 120px);
+    }
+}
 
+@keyframes rotateAway {
+    from {
+        transform: translate(0%, 0%);
+    }
+    to {
+        transform: translate(0%, -120px);
+    }
+}
