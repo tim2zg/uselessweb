@@ -19,6 +19,39 @@ h1 {
     outline-offset: 10px;
 }
 
+#box:hover {
+    animation: outlineLUL 1s infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes outlineLUL {
+    0% {
+        outline-offset: 10px;
+        outline: white 3px solid;
+    }
+    25% {
+        outline-offset: 5px;
+        outline: deeppink 3px dotted;
+    }
+    50% {
+        outline-offset: 15px;
+        outline: blue 3px double;
+    }
+    75% {
+        outline-offset: 5px;
+        outline: deeppink 3px dotted;
+    }
+    100% {
+        outline-offset: 10px;
+        outline: blue 3px dotted;
+    }
+}
+
+#box:hover h1 {
+    animation: rgb 0.5s infinite;
+    animation-delay: 1.5s;
+}
+
 #box:hover .letter {
     animation: fadeOut 0.5s ease-in-out;
     -webkit-animation-fill-mode: forwards;
@@ -30,7 +63,7 @@ h1 {
         opacity: 1;
     }
     to {
-        opacity: 0.1;
+        opacity: 0;
     }
 }
 
@@ -151,5 +184,23 @@ animation: rotateAway3 1s ease-in-out;
     }
     to {
         transform: translate(0%, -120px);
+    }
+}
+
+@keyframes rgb {
+    0% {
+        color: deeppink;
+    }
+    25% {
+        color: yellow;
+    }
+    50% {
+        color: greenyellow;
+    }
+    75% {
+        color: deepskyblue;
+    }
+    100% {
+        color: red;
     }
 }
