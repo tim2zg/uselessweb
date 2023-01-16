@@ -20,8 +20,18 @@ h1 {
 }
 
 #box:hover .letter {
-    opacity: 0.1%;
+    animation: fadeOut 0.5s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
     outline-offset: 10px;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.1;
+    }
 }
 
 #box span {
