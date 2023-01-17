@@ -55,13 +55,13 @@ h1 {
 }
 
 #innerBox {
-
+    animation: boxOutline2 2s infinite;
     position: absolute;
     top: 25vh;
     left: 20vw;
     height: 50vh;
     width: 60vw;
-
+    outline: white 3px solid;
 }
 
 #box {
@@ -75,9 +75,14 @@ h1 {
     animation: boxOutline 2s infinite;
 }
 
-div#box:hover ~ #innerBox {
-    outline: greenyellow 3px solid;
+/* If one div gets hovered change all other */
+
+#box:hover ~ #innerBox {
+    outline: blue 3px solid;
+    outline-offset: 10px;
+    animation: boxOutline 2s infinite;
 }
+
 
 @keyframes boxOutline2 {
     0% {
