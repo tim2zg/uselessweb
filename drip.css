@@ -14,9 +14,138 @@ h1 {
     margin-right: 10px;
 }
 
+#leftEdge {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 10vh;
+    width: 10vw;
+    outline: white 3px solid;
+}
+
+#rightEdge {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 10vh;
+    width: 10vw;
+    outline: white 3px solid;
+}
+
+#bottomEdge {
+    animation: boxOutline2 2s infinite;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    outline: white 3px solid;
+}
+
+#topEdge {
+    animation: boxOutline2 2s infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    outline: white 3px solid;
+}
+
+#leftEdge2 {
+    animation: boxOutline2 2s infinite;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 110vh;
+    width: 10vw;
+    outline: white 3px solid;
+}
+
+#rightEdge2 {
+    animation: boxOutline2 2s infinite;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 110vh;
+    width: 10vw;
+    outline: white 3px solid;
+}
+
+#innerBox {
+    animation: boxOutline2 2s infinite;
+    position: absolute;
+    top: 25vh;
+    left: 20vw;
+    height: 50vh;
+    width: 60vw;
+    outline: white 3px solid;
+}
+
 #box {
+    position: absolute;
+    top: 40vh;
+    left: 70vh;
+    height: 20vh;
+    width: 60vh;
     outline: white 3px solid;
     outline-offset: 10px;
+    animation: boxOutline 2s infinite;
+}
+
+@keyframes boxOutline2 {
+    0% {
+        outline: white 3px solid;
+    }
+    50% {
+        outline: white 3px dotted;
+    }
+    100% {
+        outline: white 3px dashed;
+    }
+}
+
+@keyframes boxOutline {
+    10% {
+        outline-offset: 10px;
+        outline: wheat 3px dashed;
+    }
+    20% {
+        outline-offset: 20px;
+        outline: white 3px dotted;
+    }
+    30% {
+        outline-offset: 30px;
+        outline: wheat 3px dashed;
+    }
+    40% {
+        outline-offset: 40px;
+        outline: white 3px dotted;
+    }
+    50% {
+        outline-offset: 50px;
+        outline: wheat 3px dashed;
+    }
+    60% {
+        outline-offset: 60px;
+        outline: white 3px dotted;
+    }
+    70% {
+        outline-offset: 50px;
+        outline: wheat 3px dashed;
+    }
+    80% {
+        outline-offset: 30px;
+        outline: white 3px dotted;
+    }
+    90% {
+        outline-offset: 20px;
+        outline: wheat 3px dashed;
+    }
+    100% {
+        outline-offset: 10px;
+        outline: white 3px dotted;
+    }
 }
 
 #box:hover {
@@ -99,7 +228,7 @@ h1 {
         transform: translate(0%, 0%);
     }
     to {
-        transform: translate(0%, 120px);
+        transform: translate(0%, 140px);
     }
 }
 
@@ -114,7 +243,7 @@ animation: rotateAway3 1s ease-in-out;
         transform: translate(0%, 0%);
     }
     to {
-        transform: translate(-55px, 120px);
+        transform: translate(-55px, 140px);
     }
 }
 
@@ -129,7 +258,7 @@ animation: rotateAway3 1s ease-in-out;
         transform: translate(0%, 0%);
     }
     to {
-        transform: translate(130px, 120px);
+        transform: translate(130px, 140px);
     }
 }
 
@@ -144,7 +273,7 @@ animation: rotateAway3 1s ease-in-out;
         transform: translate(0%, 0%) rotate3d(0, 0, 0, 0deg);
     }
     to {
-        transform: translate(-35px, 130px) rotate3d(180, 0, 0, 180deg);
+        transform: translate(-35px, 150px) rotate3d(180, 0, 0, 180deg);
     }
 }
 
@@ -159,7 +288,7 @@ animation: rotateAway3 1s ease-in-out;
         transform: translate(0%, 0%) rotate3d(0, 0, 0, 0deg);
     }
     to {
-        transform: translate(170px, 120px);
+        transform: translate(170px, 140px);
     }
 }
 
@@ -174,7 +303,7 @@ animation: rotateAway3 1s ease-in-out;
         transform: translate(0%, 0%) rotate3d(0, 0, 0, 0deg);
     }
     to {
-        transform: translate(200px, 120px);
+        transform: translate(200px, 140px);
     }
 }
 
