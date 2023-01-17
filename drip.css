@@ -67,22 +67,13 @@ h1 {
 #box {
     position: absolute;
     top: 40vh;
-    left: 70vh;
+    left: 75vh;
     height: 20vh;
-    width: 60vh;
+    width: 70vh;
     outline: white 3px solid;
     outline-offset: 10px;
     animation: boxOutline 2s infinite;
 }
-
-/* If one div gets hovered change all other */
-
-#box:hover ~ #innerBox {
-    outline: blue 3px solid;
-    outline-offset: 10px;
-    animation: boxOutline 2s infinite;
-}
-
 
 @keyframes boxOutline2 {
     0% {
