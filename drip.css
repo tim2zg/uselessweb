@@ -337,6 +337,26 @@ animation: rotateAway3 1s ease-in-out;
 }
 
 #box:hover ~ #innerBox {
-    animation-delay: 3s;
-    animation: outlineLUL2 1s infinite!important;
+    animation: outlineLUL2 1s infinite;
+    animation-delay: 1.5s;
+}
+
+#box:hover ~ #rightEdge2 {
+    animation: outlineLUL2 1s infinite;
+    animation-delay: 1.5s;
+}
+
+#box:hover ~ #leftEdge2 {
+    animation: outlineLUL2 1s infinite;
+    animation-delay: 1.5s;
+}
+
+#box:hover ~ #bottomEdge {
+    animation: outlineLUL2 1s infinite;
+    animation-delay: 1.5s;
+}
+
+#box:hover ~ #topEdge {
+    animation: outlineLUL2 1s infinite;
+    animation-delay: 1.5s;
 }
