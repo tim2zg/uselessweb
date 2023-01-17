@@ -335,7 +335,8 @@ animation: rotateAway3 1s ease-in-out;
     }
 }
 
-#box:hover ~ #topEdge {
+#body:has(#box:hover) #bottomEdge {
+    color: blue;
     animation: outlineLUL2 1s infinite;
     animation-delay: 1.5s;
 }
