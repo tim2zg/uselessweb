@@ -55,13 +55,13 @@ h1 {
 }
 
 #innerBox {
-    animation: boxOutline2 2s infinite;
+
     position: absolute;
     top: 25vh;
     left: 20vw;
     height: 50vh;
     width: 60vw;
-    outline: white 3px solid;
+
 }
 
 #box {
@@ -73,6 +73,10 @@ h1 {
     outline: white 3px solid;
     outline-offset: 10px;
     animation: boxOutline 2s infinite;
+}
+
+div#box:hover ~ #innerBox {
+    outline: greenyellow 3px solid;
 }
 
 @keyframes boxOutline2 {
@@ -333,10 +337,4 @@ animation: rotateAway3 1s ease-in-out;
     100% {
         color: red;
     }
-}
-
-#body:has(#box:hover) #bottomEdge {
-    color: blue;
-    animation: outlineLUL2 1s infinite;
-    animation-delay: 1.5s;
 }
