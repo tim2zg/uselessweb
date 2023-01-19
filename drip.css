@@ -66,12 +66,8 @@ h1 {
 
 #box {
     position: absolute;
-    top: 40vh;
-    left: 75vh;
-    height: 20vh;
-    width: 70vh;
     outline: white 3px solid;
-    outline-offset: 10px;
+    outline-offset: 20px;
     animation: boxOutline 2s infinite;
     z-index: 99 !important;
 }
